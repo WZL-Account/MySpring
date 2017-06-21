@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="pig" class="test.Pig">
+		<property name="name" value="hello pig"></property>
+		<property name="age" value="12"></property>
+	</bean>
+	<bean id="mydog" class="test.Dog">
+		<property name="age" value="55"></property>
+		<property name="price" value="55.5"></property>
+		<property name="cat" ref="mycat"></property>
+	</bean>
+	<bean id="mycat" class="test.Cat">
+		<property name="name" value="mimi"></property>
+		<property name="age" value="5"></property>
+		<property name="addr" value="西安邮电大学"></property>
+		<property name="pig" ref="pig"></property>
+	</bean>
+</beans>
